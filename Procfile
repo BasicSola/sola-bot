@@ -1,2 +1,2 @@
 worker: node bot.js
-worker: node purge.js
+workerx: node purge.js
