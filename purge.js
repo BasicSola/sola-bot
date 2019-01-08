@@ -16,7 +16,7 @@ bot.on('message', message => {
     // Commands
 
     // Ping
-    if (msg === prefix + 'PING') { // This checks if msg (the message but in all caps), is the same as the prefix + the command in all caps.
+    if (msg === prefix + 'ping') { // This checks if msg (the message but in all caps), is the same as the prefix + the command in all caps.
 
         // Now, let's send a response.
         message.channel.send('Ping!'); // This 'sends' the message to the channel the message was in. You can change what is in the message to whatever you want.
@@ -25,7 +25,7 @@ bot.on('message', message => {
 
 
     // Purge
-    if (msg.startsWith(prefix + 'PURGE')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
+    if (msg.startsWith(prefix + 'purge')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
         // We have to wrap this in an async since awaits only work in them.
         async function purge() {
             message.delete(); // Let's delete the command message, so it doesn't interfere with the messages we are going to delete.
