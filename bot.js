@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
     console.log("Turning On Bot")
-    bot.user.setActivity("Kamora's moans", {type: 2});
+    bot.user.setActivity("Sola showering", {type: 2});
 });
 
 bot.on('guildMemberAdd', member => {
