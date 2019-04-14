@@ -2,8 +2,14 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 bot.on('ready', () => {
-    console.log("Turning On Bot")
-    bot.user.setActivity("Sola's agony", {type: 2});
+var kanalver = client.channels.find(channel => channel.id === '527502675915440139');    
+console.log("Turning On Bot")
+bot.user.setActivity("Sola's agony", {type: 2});
+
+setInterval(()=> {
+kanalver.send("Please don't forget bumping the server.");
+}, 5000);
+
 });
 
 bot.on('guildMemberAdd', member => {
